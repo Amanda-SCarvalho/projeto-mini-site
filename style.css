@@ -1,5 +1,10 @@
+/* Basicamente para a criação dessa pagina, foi utilizado um video do youtube,
+ para a criação do navibar, pq eu estava com uma certa dificuldade em deixar 
+ os elementos cada um de um lado, tambem utilizei os artigos da w3school e do MDN,
+  e alguns da alura tambem */
 * {
-    text-decoration: none;
+    /* Usei o text-decoration: none para retirar o sublinhado dos links */
+    text-decoration: none; 
     font-family: monospace;
 }
 
@@ -16,13 +21,16 @@ header {
     background-color: rgb(24, 19, 56);
     padding: 0px 15px;
     width: auto 30px;
+    /* Como não utilizei o margin:0 no body coloquei um arredondamento na borda do header */
     border-radius: 15px;
 }
 
+/* aliceblue foi a cor que utilizei no lugar do branco */
 h1 a {
     color: aliceblue;
 }
 
+/* Inline-block usei para deixar a lista lado a lado, e o list-style para retirar a bolinha da lista */
 li {
     list-style: none;
     display: inline-block;
@@ -30,6 +38,7 @@ li {
 
 }
 
+/* margin-right: para separar os elementos  */
 li a {
     color: aliceblue;
     margin-right: 25px;
@@ -42,6 +51,7 @@ h2 {
     text-align: center;
 }
 
+/* Utilizei uma margin para poder centralizar o section */
 section {
     background-color: aliceblue;
     text-align: center;
@@ -76,6 +86,8 @@ footer {
 }
 
 /* Pagina de Contato */
+
+/* Aqui eu utilizei o resize para aumentar o textarea caso necessario */
 input, textarea {
     width: 90%;
     padding: 12px;
@@ -83,6 +95,8 @@ input, textarea {
     border-radius: 4px;
     resize: vertical;
 }
+
+/* Aqui utilizei o inline-block para os elementos ficarem um embaixo do outro */
 label {
     font-size: 16px;
     padding: 12px 12px 12px 0;
