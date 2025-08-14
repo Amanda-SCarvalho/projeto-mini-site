@@ -1,12 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 
-/* Basicamente para a criação dessa pagina, foi utilizado um video do youtube,
- para a criação do navibar, pq eu estava com uma certa dificuldade em deixar 
- os elementos cada um de um lado, tambem utilizei os artigos da w3school e do MDN,
-  e alguns da alura tambem.
-  Tambem decidi nao adicionar nenhuma class e nenhum id, ja que são poucos elementos*/
 * {
-    /* Usei o text-decoration: none para retirar o sublinhado dos links */
+    /* text-decoration: none para retirar o sublinhado dos links */
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
@@ -81,9 +76,9 @@ header ul {
 /* Header  */
 h2 {
     text-align: center;
-    color: #a0b0c5;
+    color: #d3e0f1;
     margin-bottom: 16px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /* Utilizei uma margin para poder centralizar o section */
@@ -103,8 +98,8 @@ section p {
 }
 
 section a {
-    background-color: #1e90ff;
-    color: #0a152f;
+    background-color: #141E61;
+    color: #cdd1da;
     font-size: 14px;
     font-weight: 600;
     text-align: center;
@@ -159,6 +154,10 @@ input[type=submit] {
     border-radius: 5px;
     margin: 15px;
     font-size: 16px;
+}
+
+img {
+  width: 30px;
 }
 
 /* Pagina Sobre Mim */
