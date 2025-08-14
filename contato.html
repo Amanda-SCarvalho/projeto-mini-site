@@ -11,13 +11,13 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-        <div class="container">
+        <div class="container ajuste-flex">
             <h1><a href="index.html">Amanda Carvalho</a></h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li class="item-menu"><a href="index.html">Home</a></li>
+                    <li class="item-menu"><a href="sobre.html">Sobre</a></li>
+                    <li class="item-menu"><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,28 +26,43 @@
 
     <!-- Conteudo principal -->
     <main>
-        <h2>Entre em Contato</h2>
-        <section>
-            <form action="">
-                <label for="">Nome:</label>
-                <input type="text">
-                <br>
-                <label for="">Email:</label>
-                <input type="text">
-                <br>
-                <label for="">Escreva uma mensagem: </label>
-                <textarea name="mensagem-form" id="mensagem-form"></textarea>
-                <input type="submit" value="submit">
-            </form>
-            <button><a href="index.html">Voltar ao Início</a></button>
-            <button><a href="sobre.html">Sobre mim</a></button>
-        </section>
+        <div class="container main">
+            <h2>Entre em Contato</h2>
+            <section>
+                <form action="">
+                    <label for="">Nome:</label>
+                    <input type="text">
+                    <br>
+                    <label for="">Email:</label>
+                    <input type="text">
+                    <br>
+                    <label for="">Escreva uma mensagem: </label>
+                    <textarea name="mensagem-form" id="mensagem-form"></textarea>
+                    <input type="submit" value="submit">
+                </form>
+                <a href="index.html">Voltar ao Início</a>
+                <a href="sobre.html">Sobre mim</a>
+            </section>
+        </div>
+
 
     </main>
 
     <!-- Rodapé -->
     <footer>
-        <h3>Todos os direitos reservados</h3>
+        <div class="container">
+            <p>Todos os direitos reservados.</p>
+
+            <a href="https://github.com/nevesapi/mini-site" target="_blank">
+                <img src="assets/github.png" alt="">
+                Github
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+                <img src="assets/instagram.png" alt="">
+                Instagram
+            </a>
+        </div>
 
     </footer>
 

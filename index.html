@@ -11,13 +11,13 @@
 <body>
     <!-- Cabeçalho -->
     <header>
-        <div class="container">
+        <div class="container ajuste-flex">
             <h1><a href="index.html">Amanda Carvalho</a></h1>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li class="item-menu" ><a href="index.html">Home</a></li>
+                    <li class="item-menu"><a href="sobre.html">Sobre</a></li>
+                    <li class="item-menu"><a href="contato.html">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -26,24 +26,32 @@
 
     <!-- Conteudo principal -->
     <main>
-        <h2>Bem Vindo Ao Meu Site</h2>
-        <section>
-            <p>Olá, Eu me chamo Amanda Carvalho</p>
-            <p>Clique em um dos botões abaixo para saber mais.</p>
-            <button><a href="sobre.html">Sobre mim</a></button>
-            <button><a href="contato.html">Fale Comigo</a></button>
-        </section>
-
+        <div class="container main">
+            <h2>Bem Vindo Ao Meu Site</h2>
+            <section>
+                <p>Olá, Eu me chamo Amanda Carvalho</p>
+                <p>Clique em um dos botões abaixo para saber mais.</p>
+                <a href="sobre.html">Sobre mim</a>
+                <a href="contato.html">Fale Comigo</a>
+            </section>
+        </div>
     </main>
 
     <!-- Rodapé -->
     <footer>
-        <h3>Todos os direitos reservados</h3>
-        <a href="https://github.com/melissadui" target="_blank"><img src="assets/img/github-icon.png"
-                alt="Icone do github"></a>
-        <a href="https://www.linkedin.com/in/melissa-duilio/" target="_blank"><img src="assets/img/linkedin-icon.png"
-                alt="Icone do linkedin"></a>
+        <div class="container">
+            <p>Todos os direitos reservados.</p>
 
+            <a href="https://github.com/nevesapi/mini-site" target="_blank">
+                <img src="assets/github.png" alt="">
+                Github
+            </a>
+
+            <a href="https://instagram.com" target="_blank">
+                <img src="assets/instagram.png" alt="">
+                Instagram
+            </a>
+        </div>
     </footer>
 
 </body>

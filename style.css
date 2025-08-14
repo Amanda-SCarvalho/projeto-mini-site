@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
 /* Basicamente para a criação dessa pagina, foi utilizado um video do youtube,
  para a criação do navibar, pq eu estava com uma certa dificuldade em deixar 
  os elementos cada um de um lado, tambem utilizei os artigos da w3school e do MDN,
@@ -5,21 +7,20 @@
   Tambem decidi nao adicionar nenhuma class e nenhum id, ja que são poucos elementos*/
 * {
     /* Usei o text-decoration: none para retirar o sublinhado dos links */
-    text-decoration: none; 
+    text-decoration: none;
     list-style: none;
-    font-family: monospace;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
 body {
-    /* background-color: rgb(171, 202, 230); */
-    background-color:#050a1a;
+    background-color: #050a1a;
     height: 2000px;
+    font-family: "Poppins";
 }
 
 /* NavBar  */
-
 header {
     display: flex;
     align-items: center;
@@ -28,70 +29,96 @@ header {
     padding: 0px 15px;
     height: 60px;
     position: sticky;
-    /* Como não utilizei o margin:0 no body coloquei um arredondamento na borda do header */
     border-radius: 15px;
     border: 1px solid #0f1b33;
     flex-direction: row;
+
+    /* Adicionei um margin para aparecer o arredondamento das bordas */
     margin: 5px;
 }
 
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.ajuste-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* aliceblue foi a cor que utilizei no lugar do branco */
-h1 a {
+header a {
     color: aliceblue;
 }
 
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 10px;
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
 }
 
-/* margin-right: para separar os elementos  */
-li a {
-    color: aliceblue;
-    margin-right: 25px;
+.item-menu:hover {
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.item-menu:hover a {
+    color: #0a152f;
+}
+
+.item-menu {
+    list-style: none;
     font-size: 18px;
+     padding: 5px 10px;
+    border: 2px solid transparent;
 }
 
 /* Header  */
-
 h2 {
     text-align: center;
     color: #a0b0c5;
+    margin-bottom: 16px;
+    font-size: 2rem;
 }
 
 /* Utilizei uma margin para poder centralizar o section */
-section {
+.main section {
+    text-align: justify;
     background-color: #e0e6f0;
-    text-align: center;
-    padding: 50px 20px;
+    padding: 20px;
     border: 3px solid #0f1b33;
     margin: 10px 25%;
     border-radius: 15px;
 }
 
 section p {
-    font-size: 16px;
-
-}
-
-section button {
-    background-color: #1e90ff;
-    border-radius: 5px;
-    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 150%;
 }
 
 section a {
-    color: aliceblue;
+    background-color: #1e90ff;
+    color: #0a152f;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 0;
+    border-radius: 6px;
+}
+
+section a:hover {
+    background-color: #0a152f;
+    color: #1e90ff;
 }
 
 /* Footer */
@@ -108,7 +135,8 @@ footer {
 /* Pagina de Contato */
 
 /* Aqui eu utilizei o resize para aumentar o textarea caso necessario */
-input, textarea {
+input,
+textarea {
     width: 90%;
     padding: 12px;
     border: 1px solid rgb(24, 19, 56);
@@ -131,4 +159,28 @@ input[type=submit] {
     border-radius: 5px;
     margin: 15px;
     font-size: 16px;
+}
+
+/* Pagina Sobre Mim */
+.minha-historia h3 {
+    margin: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.minha-historia p {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.minhas-habilidades h3{
+    text-align: center;
+}
+
+ul {
+    margin: 5px;
+}
+
+li {
+    list-style: disc;
 }
